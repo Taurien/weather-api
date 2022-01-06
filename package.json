@@ -1,6 +1,6 @@
 {
-  "homepage": "https://taurien.github.io/search-weather-api",
-  "name": "search-weather-api",
+  "homepage": "https://taurien.github.io/weather-api",
+  "name": "weather-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

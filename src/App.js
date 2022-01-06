@@ -24,7 +24,7 @@ function App() {
       }>
       <WeatherContextProvider>
         <Routes>
-            <Route exact path='/search-weather-api' element={<Home />} />
+            <Route exact path='/weather-api' element={<Home />} />
             <Route path='/weather/:name' element={<WeatherInformation />} />
         </Routes>
       </WeatherContextProvider>
