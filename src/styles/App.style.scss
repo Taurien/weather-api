@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+    order: 1px solid red;
+}
+
+html {
+    font-size: 62.5%;
+
+    .dayBg, .sunsetBg, .nightBg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .dayBg {
+        background-image: linear-gradient(rgba(0, 126, 158, 0.3), rgba(88, 88, 88, 0.2)), url(../assets/bg/day.jpg) ;
+
+    }
+    .sunsetBg {
+        background-image: linear-gradient(rgba(255, 132, 132, 0.5), rgba(176, 107, 255, 0.1)), url(../assets/bg/sunset.jpg) ;
+
+    }
+    .nightBg {
+        background-image: linear-gradient(rgba(146, 100, 255, 0.4), rgba(92, 130, 255, 0.2)), url(../assets/bg/night.jpg) ;
+
+    }
+}
