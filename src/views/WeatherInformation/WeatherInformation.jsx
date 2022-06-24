@@ -19,23 +19,14 @@ const WeatherInformation = () => {
     
     return (
         <div className='weatherview h-full flex flex-col justify-center'>
-
             {
                 weather ? (
                 <>
-                <CityInformation
-                    name={weather.name}
-                    weather={weather.weather}
-                    temp={weather.main}
-                    sys={weather.sys}
-                    wind={weather.wind}
-                />
-                <button className='self-center absolute'
-                onClick={() => navigate(-1)}>Go back</button>
+                    <CityInformation currentWeather={weather.currentWeather} forecast={weather.forecast} airPollution={weather.airPollution} />
+                    <button className='self-center absolute  border border-solid border-yellow-300 px-2 py-1 text-base' onClick={() => navigate(-1)}>Go back</button>
                 </> 
                 ) : <Loader />
             }
-            
         </div>
     )
 }
