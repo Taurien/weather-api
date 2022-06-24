@@ -1,27 +1,23 @@
 {
   "files": {
-    "main.css": "/weather-api/static/css/main.752959a9.chunk.css",
-    "main.js": "/weather-api/static/js/main.6a8daf86.chunk.js",
-    "main.js.map": "/weather-api/static/js/main.6a8daf86.chunk.js.map",
-    "runtime-main.js": "/weather-api/static/js/runtime-main.6eb859e7.js",
-    "runtime-main.js.map": "/weather-api/static/js/runtime-main.6eb859e7.js.map",
-    "static/js/2.81277c15.chunk.js": "/weather-api/static/js/2.81277c15.chunk.js",
-    "static/js/2.81277c15.chunk.js.map": "/weather-api/static/js/2.81277c15.chunk.js.map",
-    "static/js/3.6a7a9419.chunk.js": "/weather-api/static/js/3.6a7a9419.chunk.js",
-    "static/js/3.6a7a9419.chunk.js.map": "/weather-api/static/js/3.6a7a9419.chunk.js.map",
+    "main.css": "/weather-api/static/css/main.328f627e.chunk.css",
+    "main.js": "/weather-api/static/js/main.68e9e4db.chunk.js",
+    "main.js.map": "/weather-api/static/js/main.68e9e4db.chunk.js.map",
+    "runtime-main.js": "/weather-api/static/js/runtime-main.3a6654d1.js",
+    "runtime-main.js.map": "/weather-api/static/js/runtime-main.3a6654d1.js.map",
+    "static/js/2.3ca7f0dc.chunk.js": "/weather-api/static/js/2.3ca7f0dc.chunk.js",
+    "static/js/2.3ca7f0dc.chunk.js.map": "/weather-api/static/js/2.3ca7f0dc.chunk.js.map",
+    "static/js/3.65ae2487.chunk.js": "/weather-api/static/js/3.65ae2487.chunk.js",
+    "static/js/3.65ae2487.chunk.js.map": "/weather-api/static/js/3.65ae2487.chunk.js.map",
     "index.html": "/weather-api/index.html",
-    "static/css/main.752959a9.chunk.css.map": "/weather-api/static/css/main.752959a9.chunk.css.map",
-    "static/js/2.81277c15.chunk.js.LICENSE.txt": "/weather-api/static/js/2.81277c15.chunk.js.LICENSE.txt",
-    "static/media/Clear.b8a082d6.svg": "/weather-api/static/media/Clear.b8a082d6.svg",
-    "static/media/Clouds.243a02fb.svg": "/weather-api/static/media/Clouds.243a02fb.svg",
-    "static/media/Drizzle.ed6ad5eb.svg": "/weather-api/static/media/Drizzle.ed6ad5eb.svg",
-    "static/media/Rain.0a8457a0.svg": "/weather-api/static/media/Rain.0a8457a0.svg",
+    "static/css/main.328f627e.chunk.css.map": "/weather-api/static/css/main.328f627e.chunk.css.map",
+    "static/js/2.3ca7f0dc.chunk.js.LICENSE.txt": "/weather-api/static/js/2.3ca7f0dc.chunk.js.LICENSE.txt",
     "static/media/App.style.scss": "/weather-api/static/media/sunset.3e54221c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6eb859e7.js",
-    "static/js/2.81277c15.chunk.js",
-    "static/css/main.752959a9.chunk.css",
-    "static/js/main.6a8daf86.chunk.js"
+    "static/js/runtime-main.3a6654d1.js",
+    "static/js/2.3ca7f0dc.chunk.js",
+    "static/css/main.328f627e.chunk.css",
+    "static/js/main.68e9e4db.chunk.js"
   ]
 }
