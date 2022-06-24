@@ -78,7 +78,7 @@ const WeatherContextProvider = ({ children }) => {
 
         const forecast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=${9}&appid=${process.env.REACT_APP_API_KEY}`)
         // const airPollution = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&start=${start}&end=${end}&appid=${process.env.REACT_APP_API_KEY}`)
-        const airPollution = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}`)
+        const airPollution = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}`)
 
         setWeather({
             ...weather,
