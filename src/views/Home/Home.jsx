@@ -19,7 +19,7 @@ const Home = () => {
     setCiytName(value)
   }
 
-  const { response, loader, handleFetch } = useFetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciytName}&appid=${process.env.REACT_APP_API_KEY}`)
+  const { response, loader, handleFetch } = useFetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciytName}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
 
   
 
