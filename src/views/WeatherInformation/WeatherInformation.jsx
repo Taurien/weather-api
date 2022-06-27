@@ -7,7 +7,6 @@ import WeatherContext from '../../context/WeatherContext';
 import Loader from '../../components/Custom/Loader/Loader';
 import CityInformation from '../../components/Custom/CityInformation/CityInformation'
 
-import '../WeatherInformation/WeatherInformation.style.scss'
 
 const WeatherInformation = () => {
     
@@ -18,12 +17,12 @@ const WeatherInformation = () => {
     //const { name } = useParams()
     
     return (
-        <div className='weatherview h-full flex flex-col justify-center'>
+        <div className='weatherview h-4/5 flex flex-col'>
             {
                 weather ? (
                 <>
                     <CityInformation currentWeather={weather.currentWeather} forecast={weather.forecast} airPollution={weather.airPollution} />
-                    <button className='self-center absolute  border border-solid border-yellow-300 px-2 py-1 text-base' onClick={() => navigate(-1)}>Go back</button>
+                    <button className='self-center mt-4 px-2 py-1 text-base rounded-lg bg-gray-200' onClick={() => navigate(-1)}>Go back</button>
                 </> 
                 ) : <Loader />
             }

@@ -31,9 +31,12 @@ const Home = () => {
 
 
   return (
-    <div className="homeview h-full flex flex-col justify-center">
+    <div className="homeview h-4/5 flex flex-col justify-evenly">
       {
-        gpsError && <div>gps error</div>
+        gpsError.state && 
+        <div className='absolute w-full top-0 left-0 z-10 py-1 bg-yellow-300 font-bold text-center'>
+          ⚠ {gpsError.msg}
+        </div>
       }
 
       <WeatherForm
@@ -46,10 +49,13 @@ const Home = () => {
       }
 
       {
-        dataFromIP && weather && <CityInformation  currentWeather={weather.currentWeather} forecast={weather.forecast} airPollution={weather.airPollution} min={true} />
+        dataFromIP && weather && 
+        <>
+          <CityInformation  currentWeather={weather.currentWeather} forecast={weather.forecast} airPollution={weather.airPollution} min={true} />
+          <button className='self-center px-2 py-1 rounded-lg bg-gray-200' onClick={() => locationByGps()}>Use GPS</button>
+        </>
       }
 
-      <button className=' self-center border border-solid border-yellow-300 px-2 py-1 ' onClick={() => locationByGps()}>Use GPS</button>
       
     </div>      
   )

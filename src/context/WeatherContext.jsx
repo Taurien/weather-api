@@ -7,7 +7,7 @@ const WeatherContextProvider = ({ children }) => {
 
     const [ dataFromIP, setDataFromIP ] = useState(null)
     const [ weather, setWeather] = useState(null)
-    const [ gpsError, setGpsError] = useState(false)
+    const [ gpsError, setGpsError] = useState({state: false, msg: null})
 
     const handleWeather = (el) => setWeather(el)
 
@@ -15,7 +15,7 @@ const WeatherContextProvider = ({ children }) => {
         const latitude = +lat.toFixed(2)
         const longitude = +lon.toFixed(2)
         
-        const currentWeather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}`)
+        const currentWeather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
 
         setWeather({
             currentWeather: currentWeather.data,
@@ -76,9 +76,9 @@ const WeatherContextProvider = ({ children }) => {
         // const start = toTimestamp(currentDate)
         // const end = toTimestamp(new Date(daysAfter))
 
-        const forecast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=${9}&appid=${process.env.REACT_APP_API_KEY}`)
+        const forecast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=${9}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
         // const airPollution = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&start=${start}&end=${end}&appid=${process.env.REACT_APP_API_KEY}`)
-        const airPollution = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}`)
+        const airPollution = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
 
         setWeather({
             ...weather,
@@ -114,7 +114,7 @@ const WeatherContextProvider = ({ children }) => {
         const error = (err) => {
             console.log(err)
             console.warn(`ERROR(${err.code}): ${err.message}`);
-            setGpsError(true)
+            setGpsError({state: true, msg: err.message})
         }
 
         navigator.geolocation.getCurrentPosition(success, error, options);

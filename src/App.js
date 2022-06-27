@@ -15,7 +15,7 @@ function App() {
   const background = hours >= 16 && hours <= 18 ? 'sunsetBg' : hours >= 6 && hours <= 15 ? 'dayBg' : 'nightBg'
 
   return (
-    <Div100vh className={`flex flex-col ${background}`}>
+    <Div100vh className={`flex flex-col justify-center ${background}`}>
       <WeatherContextProvider>
         <Routes>
             <Route exact path='/weather-api' element={<Home />} />
