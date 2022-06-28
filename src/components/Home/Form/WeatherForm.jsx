@@ -5,7 +5,7 @@ import magnifying from '../../../assets/magnifying-glass.svg'
 const WeatherForm = ({ handleCity, handleFetch }) => {
     return (
         <form action=''
-        className='overflow-hidden rounded-full w-8/12  desktop:w-2/5 box-shdw'
+        className='overflow-hidden rounded-full w-8/12 desktop:w-2/5 box-shdw'
         onSubmit={e => handleFetch(e)}>
             <input
                 type="text"
