@@ -20,13 +20,8 @@ export const useFetch = API => {
             console.warn(error)  
             setResponse(error.response.data)
         }
-
         
         setLoader(false)
-        /*setTimeout(() => {
-            setResponse(result)
-            setLoader(false)
-        }, 1500)*/
     }
 
     // console.log(response)

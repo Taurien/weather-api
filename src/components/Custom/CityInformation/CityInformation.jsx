@@ -46,11 +46,11 @@ const CityInformation = ({ currentWeather, forecast, airPollution, min = false, 
     
     
     return (
-        <div className='relative self-center desktop:min-w-min mobile:w-9/12 flex flex-col items-center rounded-lg p-3 mx-4 text-xs glass box-shdw'>
+        <div className='relative self-center desktop:min-w-min mobile:w-9/12 flex flex-col items-center rounded-lg p-3 my-auto text-xs glass box-shdw'>
             {
                 currentWeather.message?
                 <>
-                    <p>{currentWeather.message}</p>
+                    <p className='capitalize'>{currentWeather.message}</p>
                 </> 
                 : 
                 <>
